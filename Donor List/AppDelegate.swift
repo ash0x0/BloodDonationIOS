@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Firebase
+import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +16,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
-		FirebaseApp.configure()
+		Alamofire.request("https://httpbin.org/get").responseJSON { response in
+			print("Request: \(String(describing: response.request))")   // original url request
+			print("Response: \(String(describing: response.response))") // http url response
+			print("Result: \(response.result)")                         // response serialization result
+			
+			if let json = response.result.value {
+				print("JSON: \(json)") // serialized json response
+			}
+			
+			if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+				print("Data: \(utf8Text)") // original server data as UTF8 string
+			}
+		}
 		return true
 	}
 

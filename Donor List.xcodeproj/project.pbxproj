@@ -17,7 +17,6 @@
 		E28EB6291F19591700B2D175 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28EB6271F19591700B2D175 /* LaunchScreen.storyboard */; };
 		E28EB6341F19591700B2D175 /* Donor_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28EB6331F19591700B2D175 /* Donor_ListTests.swift */; };
 		E28EB63F1F19591700B2D175 /* Donor_ListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28EB63E1F19591700B2D175 /* Donor_ListUITests.swift */; };
-		E28EB64D1F195ACB00B2D175 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E28EB64C1F195ACB00B2D175 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +58,6 @@
 		E28EB63A1F19591700B2D175 /* Donor ListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Donor ListUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28EB63E1F19591700B2D175 /* Donor_ListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donor_ListUITests.swift; sourceTree = "<group>"; };
 		E28EB6401F19591700B2D175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E28EB64C1F195ACB00B2D175 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E988C639656EBFE91B87878C /* Pods_Donor_ListUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Donor_ListUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -144,7 +142,6 @@
 				E28EB6221F19591700B2D175 /* Main.storyboard */,
 				E28EB6251F19591700B2D175 /* Assets.xcassets */,
 				E28EB6271F19591700B2D175 /* LaunchScreen.storyboard */,
-				E28EB64C1F195ACB00B2D175 /* GoogleService-Info.plist */,
 				E28EB62A1F19591700B2D175 /* Info.plist */,
 			);
 			path = "Donor List";
@@ -288,7 +285,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E28EB6291F19591700B2D175 /* LaunchScreen.storyboard in Resources */,
-				E28EB64D1F195ACB00B2D175 /* GoogleService-Info.plist in Resources */,
 				E28EB6261F19591700B2D175 /* Assets.xcassets in Resources */,
 				E28EB6241F19591700B2D175 /* Main.storyboard in Resources */,
 			);
@@ -713,6 +709,7 @@
 				E28EB6451F19591700B2D175 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E28EB6461F19591700B2D175 /* Build configuration list for PBXNativeTarget "Donor ListTests" */ = {
 			isa = XCConfigurationList;
@@ -721,6 +718,7 @@
 				E28EB6481F19591700B2D175 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E28EB6491F19591700B2D175 /* Build configuration list for PBXNativeTarget "Donor ListUITests" */ = {
 			isa = XCConfigurationList;
@@ -729,6 +727,7 @@
 				E28EB64B1F19591700B2D175 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

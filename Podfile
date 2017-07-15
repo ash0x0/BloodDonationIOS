@@ -6,7 +6,7 @@ target 'Donor List' do
   use_frameworks!
 
   # Pods for Donor List
-pod 'Firebase/Core’
+pod 'Alamofire', '~> 4.4'
 
   target 'Donor ListTests' do
     inherit! :search_paths
