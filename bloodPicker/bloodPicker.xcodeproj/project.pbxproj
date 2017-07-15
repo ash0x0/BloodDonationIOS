@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA4C57451F1A9D9E008BF678 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4C57441F1A9D9E008BF678 /* AppDelegate.swift */; };
+		AA4C57471F1A9D9E008BF678 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4C57461F1A9D9E008BF678 /* ViewController.swift */; };
+		AA4C574A1F1A9D9E008BF678 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA4C57481F1A9D9E008BF678 /* Main.storyboard */; };
+		AA4C574C1F1A9D9E008BF678 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA4C574B1F1A9D9E008BF678 /* Assets.xcassets */; };
+		AA4C574F1F1A9D9E008BF678 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA4C574D1F1A9D9E008BF678 /* LaunchScreen.storyboard */; };
+		AA4C575A1F1A9D9E008BF678 /* bloodPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4C57591F1A9D9E008BF678 /* bloodPickerTests.swift */; };
+		AA4C57651F1A9D9E008BF678 /* bloodPickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4C57641F1A9D9E008BF678 /* bloodPickerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA4C57561F1A9D9E008BF678 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA4C57391F1A9D9E008BF678 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA4C57401F1A9D9E008BF678;
+			remoteInfo = bloodPicker;
+		};
+		AA4C57611F1A9D9E008BF678 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA4C57391F1A9D9E008BF678 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA4C57401F1A9D9E008BF678;
+			remoteInfo = bloodPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA4C57411F1A9D9E008BF678 /* bloodPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bloodPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA4C57441F1A9D9E008BF678 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA4C57461F1A9D9E008BF678 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA4C57491F1A9D9E008BF678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA4C574B1F1A9D9E008BF678 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA4C574E1F1A9D9E008BF678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA4C57501F1A9D9E008BF678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA4C57551F1A9D9E008BF678 /* bloodPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bloodPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA4C57591F1A9D9E008BF678 /* bloodPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bloodPickerTests.swift; sourceTree = "<group>"; };
+		AA4C575B1F1A9D9E008BF678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA4C57601F1A9D9E008BF678 /* bloodPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bloodPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA4C57641F1A9D9E008BF678 /* bloodPickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bloodPickerUITests.swift; sourceTree = "<group>"; };
+		AA4C57661F1A9D9E008BF678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA4C573E1F1A9D9E008BF678 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA4C57521F1A9D9E008BF678 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA4C575D1F1A9D9E008BF678 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA4C57381F1A9D9E008BF678 = {
+			isa = PBXGroup;
+			children = (
+				AA4C57431F1A9D9E008BF678 /* bloodPicker */,
+				AA4C57581F1A9D9E008BF678 /* bloodPickerTests */,
+				AA4C57631F1A9D9E008BF678 /* bloodPickerUITests */,
+				AA4C57421F1A9D9E008BF678 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA4C57421F1A9D9E008BF678 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA4C57411F1A9D9E008BF678 /* bloodPicker.app */,
+				AA4C57551F1A9D9E008BF678 /* bloodPickerTests.xctest */,
+				AA4C57601F1A9D9E008BF678 /* bloodPickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA4C57431F1A9D9E008BF678 /* bloodPicker */ = {
+			isa = PBXGroup;
+			children = (
+				AA4C57441F1A9D9E008BF678 /* AppDelegate.swift */,
+				AA4C57461F1A9D9E008BF678 /* ViewController.swift */,
+				AA4C57481F1A9D9E008BF678 /* Main.storyboard */,
+				AA4C574B1F1A9D9E008BF678 /* Assets.xcassets */,
+				AA4C574D1F1A9D9E008BF678 /* LaunchScreen.storyboard */,
+				AA4C57501F1A9D9E008BF678 /* Info.plist */,
+			);
+			path = bloodPicker;
+			sourceTree = "<group>";
+		};
+		AA4C57581F1A9D9E008BF678 /* bloodPickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA4C57591F1A9D9E008BF678 /* bloodPickerTests.swift */,
+				AA4C575B1F1A9D9E008BF678 /* Info.plist */,
+			);
+			path = bloodPickerTests;
+			sourceTree = "<group>";
+		};
+		AA4C57631F1A9D9E008BF678 /* bloodPickerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA4C57641F1A9D9E008BF678 /* bloodPickerUITests.swift */,
+				AA4C57661F1A9D9E008BF678 /* Info.plist */,
+			);
+			path = bloodPickerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA4C57401F1A9D9E008BF678 /* bloodPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA4C57691F1A9D9E008BF678 /* Build configuration list for PBXNativeTarget "bloodPicker" */;
+			buildPhases = (
+				AA4C573D1F1A9D9E008BF678 /* Sources */,
+				AA4C573E1F1A9D9E008BF678 /* Frameworks */,
+				AA4C573F1F1A9D9E008BF678 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bloodPicker;
+			productName = bloodPicker;
+			productReference = AA4C57411F1A9D9E008BF678 /* bloodPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA4C57541F1A9D9E008BF678 /* bloodPickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA4C576C1F1A9D9E008BF678 /* Build configuration list for PBXNativeTarget "bloodPickerTests" */;
+			buildPhases = (
+				AA4C57511F1A9D9E008BF678 /* Sources */,
+				AA4C57521F1A9D9E008BF678 /* Frameworks */,
+				AA4C57531F1A9D9E008BF678 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA4C57571F1A9D9E008BF678 /* PBXTargetDependency */,
+			);
+			name = bloodPickerTests;
+			productName = bloodPickerTests;
+			productReference = AA4C57551F1A9D9E008BF678 /* bloodPickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA4C575F1F1A9D9E008BF678 /* bloodPickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA4C576F1F1A9D9E008BF678 /* Build configuration list for PBXNativeTarget "bloodPickerUITests" */;
+			buildPhases = (
+				AA4C575C1F1A9D9E008BF678 /* Sources */,
+				AA4C575D1F1A9D9E008BF678 /* Frameworks */,
+				AA4C575E1F1A9D9E008BF678 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA4C57621F1A9D9E008BF678 /* PBXTargetDependency */,
+			);
+			name = bloodPickerUITests;
+			productName = bloodPickerUITests;
+			productReference = AA4C57601F1A9D9E008BF678 /* bloodPickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA4C57391F1A9D9E008BF678 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Gehad;
+				TargetAttributes = {
+					AA4C57401F1A9D9E008BF678 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					AA4C57541F1A9D9E008BF678 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = AA4C57401F1A9D9E008BF678;
+					};
+					AA4C575F1F1A9D9E008BF678 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = AA4C57401F1A9D9E008BF678;
+					};
+				};
+			};
+			buildConfigurationList = AA4C573C1F1A9D9E008BF678 /* Build configuration list for PBXProject "bloodPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA4C57381F1A9D9E008BF678;
+			productRefGroup = AA4C57421F1A9D9E008BF678 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA4C57401F1A9D9E008BF678 /* bloodPicker */,
+				AA4C57541F1A9D9E008BF678 /* bloodPickerTests */,
+				AA4C575F1F1A9D9E008BF678 /* bloodPickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA4C573F1F1A9D9E008BF678 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA4C574F1F1A9D9E008BF678 /* LaunchScreen.storyboard in Resources */,
+				AA4C574C1F1A9D9E008BF678 /* Assets.xcassets in Resources */,
+				AA4C574A1F1A9D9E008BF678 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA4C57531F1A9D9E008BF678 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA4C575E1F1A9D9E008BF678 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA4C573D1F1A9D9E008BF678 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA4C57471F1A9D9E008BF678 /* ViewController.swift in Sources */,
+				AA4C57451F1A9D9E008BF678 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA4C57511F1A9D9E008BF678 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA4C575A1F1A9D9E008BF678 /* bloodPickerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA4C575C1F1A9D9E008BF678 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA4C57651F1A9D9E008BF678 /* bloodPickerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA4C57571F1A9D9E008BF678 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA4C57401F1A9D9E008BF678 /* bloodPicker */;
+			targetProxy = AA4C57561F1A9D9E008BF678 /* PBXContainerItemProxy */;
+		};
+		AA4C57621F1A9D9E008BF678 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA4C57401F1A9D9E008BF678 /* bloodPicker */;
+			targetProxy = AA4C57611F1A9D9E008BF678 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA4C57481F1A9D9E008BF678 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA4C57491F1A9D9E008BF678 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA4C574D1F1A9D9E008BF678 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA4C574E1F1A9D9E008BF678 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA4C57671F1A9D9E008BF678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA4C57681F1A9D9E008BF678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA4C576A1F1A9D9E008BF678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = bloodPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Gehad.bloodPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AA4C576B1F1A9D9E008BF678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = bloodPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Gehad.bloodPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AA4C576D1F1A9D9E008BF678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = bloodPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Gehad.bloodPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bloodPicker.app/bloodPicker";
+			};
+			name = Debug;
+		};
+		AA4C576E1F1A9D9E008BF678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = bloodPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Gehad.bloodPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bloodPicker.app/bloodPicker";
+			};
+			name = Release;
+		};
+		AA4C57701F1A9D9E008BF678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = bloodPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Gehad.bloodPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = bloodPicker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		AA4C57711F1A9D9E008BF678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = bloodPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Gehad.bloodPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = bloodPicker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA4C573C1F1A9D9E008BF678 /* Build configuration list for PBXProject "bloodPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA4C57671F1A9D9E008BF678 /* Debug */,
+				AA4C57681F1A9D9E008BF678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA4C57691F1A9D9E008BF678 /* Build configuration list for PBXNativeTarget "bloodPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA4C576A1F1A9D9E008BF678 /* Debug */,
+				AA4C576B1F1A9D9E008BF678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AA4C576C1F1A9D9E008BF678 /* Build configuration list for PBXNativeTarget "bloodPickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA4C576D1F1A9D9E008BF678 /* Debug */,
+				AA4C576E1F1A9D9E008BF678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AA4C576F1F1A9D9E008BF678 /* Build configuration list for PBXNativeTarget "bloodPickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA4C57701F1A9D9E008BF678 /* Debug */,
+				AA4C57711F1A9D9E008BF678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA4C57391F1A9D9E008BF678 /* Project object */;
+}

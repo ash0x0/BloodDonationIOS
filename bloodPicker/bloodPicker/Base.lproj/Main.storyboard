@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F2411" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="bloodPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7E-jQ-fsw">
+                                <rect key="frame" x="506" y="94" width="48" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="Sty-x9-biB"/>
+                                </constraints>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="search:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mTe-YI-aFE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1I7-rQ-11L">
+                                <rect key="frame" x="242" y="302" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="XVn-b8-ygv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfh-TD-ebP">
+                                <rect key="frame" x="53" y="44" width="365" height="148"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="148" id="zSr-45-7Bd"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="UKB-gD-Pum"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1I7-rQ-11L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="242" id="CIW-XX-XNa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="V7E-jQ-fsw" secondAttribute="trailing" constant="26" id="GNd-sY-ULG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1I7-rQ-11L" secondAttribute="bottom" constant="277" id="HmV-6R-5eF"/>
+                            <constraint firstItem="hfh-TD-ebP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="MuS-k3-mQd"/>
+                            <constraint firstItem="V7E-jQ-fsw" firstAttribute="leading" secondItem="hfh-TD-ebP" secondAttribute="trailing" constant="88" id="W6J-XR-GT0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hfh-TD-ebP" secondAttribute="trailing" constant="162" id="YjR-UB-VhK"/>
+                            <constraint firstItem="V7E-jQ-fsw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="74" id="kYn-TA-lRF"/>
+                            <constraint firstItem="hfh-TD-ebP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="33" id="pxE-6a-1ut"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hfh-TD-ebP" secondAttribute="bottom" constant="408" id="yV6-Ym-BL4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="YjR-UB-VhK"/>
+                                <exclude reference="yV6-Ym-BL4"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="1I7-rQ-11L" id="n8Z-tB-6SI"/>
+                        <outlet property="pickb" destination="hfh-TD-ebP" id="cm9-zb-3Yf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="145" y="278"/>
+        </scene>
+    </scenes>
+</document>
