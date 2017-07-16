@@ -30,6 +30,9 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     var bloodABm=["Yasser 0123456789","Nermeen 0123268924"]
     var bloodO=["Mostafa 0123456789","Samah 0123268924"]
     var bloodOm=["Amira 0123456789","Gamal 0123268924"]
+    var emptyb=[" "," "]
+
+    
 
     
     
@@ -45,6 +48,7 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         pickBtype.delegate=self
         listDoners.dataSource=self as UITableViewDataSource
         listDoners.delegate=self as? UITableViewDelegate
+        listDoners.isHidden=true
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -78,14 +82,57 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         else if placement==7
         {return bloodOm.count}
         else
-        {return 1}
+        {return 2}
 
 
 
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = bloodA[indexPath.row]
+        
+        if placement==0{
+            cell.textLabel?.text = bloodA[indexPath.row]
+        }
+            
+        else if placement==1{
+            cell.textLabel?.text = bloodAm[indexPath.row]
+        }
+            
+        else if placement==2
+        {
+            cell.textLabel?.text = bloodB[indexPath.row]
+        }
+            
+            
+        else if placement==3
+        {
+            cell.textLabel?.text = bloodBm[indexPath.row]
+        }
+            
+        else if placement==4
+        {
+            cell.textLabel?.text = bloodAB[indexPath.row]
+        }
+        else if placement==5
+        {
+            cell.textLabel?.text = bloodABm[indexPath.row]
+        }
+        else if placement==6
+        {
+            cell.textLabel?.text = bloodO[indexPath.row]
+        }
+        else if placement==7
+        {
+            cell.textLabel?.text = bloodOm[indexPath.row]
+        }
+        else
+        {
+            cell.textLabel?.text = emptyb[indexPath.row]
+        }
+        
+
+        
+        
         return cell
     }
     
@@ -104,7 +151,36 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     
     
     @IBAction func searching(_ sender: Any) {
-bloodT=Btype[placement]
+        listDoners.isHidden=false
+
+        if(placement<8){
+            bloodT=Btype[placement]}
+        
+        
+//        if placement==0{
+//             bloodT=Btype[placement]
+//            }//
+//        else if placement==1{
+//            return bloodAm.count}
+//            
+//        else if placement==2
+//        {return bloodB.count}
+//            
+//            
+//        else if placement==3
+//        { return bloodBm.count}
+//            
+//        else if placement==4
+//        {return bloodAB.count}
+//        else if placement==5
+//        {return bloodABm.count}
+//        else if placement==6
+//        {return bloodO.count}
+//        else if placement==7
+//        {return bloodOm.count}
+//        else
+//        {return 2}
+
         
     }
     
