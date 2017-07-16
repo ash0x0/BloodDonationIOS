@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,43 +22,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1S-gi-z6L">
-                                <rect key="frame" x="304" y="77" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="searching:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uYP-H2-2T7"/>
-                                </connections>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E2y-Vx-Hn6">
-                                <rect key="frame" x="16" y="244" width="343" height="415"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="415" id="2WF-Dz-Eoi"/>
-                                </constraints>
-                            </tableView>
                             <pickerView contentMode="scaleToFill" horizontalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="b6s-B4-nMq">
-                                <rect key="frame" x="27" y="42" width="192" height="177"/>
+                                <rect key="frame" x="27" y="42" width="321" height="351"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="351" id="dMR-eG-9uq"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="Mnz-ke-nTt"/>
                                 </connections>
                             </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1S-gi-z6L">
+                                <rect key="frame" x="163" y="525" width="48" height="30"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="searching:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uYP-H2-2T7"/>
+                                    <segue destination="g1F-8Z-NM2" kind="show" id="q7r-dg-tLw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="b6s-B4-nMq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="1nS-3R-ZRO"/>
-                            <constraint firstItem="E2y-Vx-Hn6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="4Ew-au-PdS"/>
-                            <constraint firstItem="T1S-gi-z6L" firstAttribute="leading" secondItem="b6s-B4-nMq" secondAttribute="trailing" constant="85" id="QCR-iF-9hq"/>
-                            <constraint firstItem="b6s-B4-nMq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="SA0-Q5-Fsa"/>
-                            <constraint firstItem="E2y-Vx-Hn6" firstAttribute="top" secondItem="b6s-B4-nMq" secondAttribute="bottom" constant="25" id="bUj-j5-Smc"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="T1S-gi-z6L" secondAttribute="trailing" constant="9" id="bWB-LB-SFL"/>
-                            <constraint firstItem="T1S-gi-z6L" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="57" id="dRU-Ly-2CB"/>
-                            <constraint firstItem="E2y-Vx-Hn6" firstAttribute="top" secondItem="T1S-gi-z6L" secondAttribute="bottom" constant="137" id="kq1-b4-R5k"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="E2y-Vx-Hn6" secondAttribute="bottom" constant="8" symbolic="YES" id="mWP-Ht-6tr"/>
-                            <constraint firstItem="E2y-Vx-Hn6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vwl-sI-UFW"/>
+                            <constraint firstItem="b6s-B4-nMq" firstAttribute="centerX" secondItem="T1S-gi-z6L" secondAttribute="centerX" id="123-E6-B6n"/>
+                            <constraint firstItem="b6s-B4-nMq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="DMp-4a-iZw"/>
+                            <constraint firstItem="T1S-gi-z6L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ra0-Xy-sJ5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="T1S-gi-z6L" secondAttribute="bottom" constant="112" id="YhH-Ip-bhv"/>
+                            <constraint firstItem="b6s-B4-nMq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="uTA-hn-oB3"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="listDoners" destination="E2y-Vx-Hn6" id="dgw-rh-rCi"/>
                         <outlet property="pickBtype" destination="b6s-B4-nMq" id="X7K-Gz-gAK"/>
                         <outlet property="search" destination="8bC-Xf-vdC" id="Joj-FN-hBg"/>
                     </connections>
@@ -66,6 +57,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+        <!--Doner List-->
+        <scene sceneID="hU4-7e-VwA">
+            <objects>
+                <viewController storyboardIdentifier="DonerList" id="g1F-8Z-NM2" customClass="DonerList" customModule="suggestDoners" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IyI-oe-Lq6"/>
+                        <viewControllerLayoutGuide type="bottom" id="YsB-2z-tBR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SW9-ii-2e5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="2" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TKf-Nu-k8R">
+                                <rect key="frame" x="0.0" y="28" width="375" height="631"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.8078853627" green="0.27939672830000001" blue="0.2567880059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.8078853627" green="0.27939672830000001" blue="0.2567880059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexColor" red="0.80788536269430056" green="0.27939672832687495" blue="0.25678800591915274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.8078853627" green="0.27939672830000001" blue="0.2567880059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="ListDoners" destination="TKf-Nu-k8R" id="nm9-PU-7Vl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ujh-XK-zjP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="909.60000000000002" y="60.719640179910051"/>
         </scene>
     </scenes>
 </document>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSource, UITabBarDelegate,UITableViewDataSource  {
+class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSource  {
     @available(iOS 2.0, *)
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -18,21 +18,18 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     @IBOutlet var search: UIView!
 
     @IBOutlet weak var pickBtype: UIPickerView!
-    @IBOutlet weak var listDoners: UITableView!
+   // @IBOutlet weak var listDoners: UITableView!
     
     var Btype=["A","A-","B","B-","AB","AB-","O","O-"]
     var placement=9
-    var bloodA=["Ahmed 0123456789","Gehad 0123268924"]
-    var bloodAm=["Mohamed M 0123456789","Sarah 0123268924"]
-    var bloodB=["Shereen 0123456789","Fady 0123268924"]
-    var bloodBm=["Sherif 0123456789","Hend 0123268924"]
-    var bloodAB=["Magdy 0123456789","Kholoud 0123268924"]
-    var bloodABm=["Yasser 0123456789","Nermeen 0123268924"]
-    var bloodO=["Mostafa 0123456789","Samah 0123268924"]
-    var bloodOm=["Amira 0123456789","Gamal 0123268924"]
-    var emptyb=[" "," "]
-
-    
+//    var bloodA=["Ahmed 0123456789","Gehad 0123268924"]
+//    var bloodAm=["Mohamed M 0123456789","Sarah 0123268924"]
+//    var bloodB=["Shereen 0123456789","Fady 0123268924"]
+//    var bloodBm=["Sherif 0123456789","Hend 0123268924"]
+//    var bloodAB=["Magdy 0123456789","Kholoud 0123268924"]
+//    var bloodABm=["Yasser 0123456789","Nermeen 0123268924"]
+//    var bloodO=["Mostafa 0123456789","Samah 0123268924"]
+//    var bloodOm=["Amira 0123456789","Gamal 0123268924"]
 
     
     
@@ -46,9 +43,8 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         super.viewDidLoad()
         pickBtype.dataSource=self
         pickBtype.delegate=self
-        listDoners.dataSource=self as UITableViewDataSource
-        listDoners.delegate=self as? UITableViewDelegate
-        listDoners.isHidden=true
+//        listDoners.dataSource=self as UITableViewDataSource
+//        listDoners.delegate=self as? UITableViewDelegate
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -59,83 +55,7 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     
     
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if placement==0{
-            return bloodA.count}
-            
-        else if placement==1{
-             return bloodAm.count}
-
-        else if placement==2
-        {return bloodB.count}
-
-
-        else if placement==3
-        { return bloodBm.count}
-
-        else if placement==4
-        {return bloodAB.count}
-        else if placement==5
-        {return bloodABm.count}
-        else if placement==6
-        {return bloodO.count}
-        else if placement==7
-        {return bloodOm.count}
-        else
-        {return 2}
-
-
-
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
         
-        if placement==0{
-            cell.textLabel?.text = bloodA[indexPath.row]
-        }
-            
-        else if placement==1{
-            cell.textLabel?.text = bloodAm[indexPath.row]
-        }
-            
-        else if placement==2
-        {
-            cell.textLabel?.text = bloodB[indexPath.row]
-        }
-            
-            
-        else if placement==3
-        {
-            cell.textLabel?.text = bloodBm[indexPath.row]
-        }
-            
-        else if placement==4
-        {
-            cell.textLabel?.text = bloodAB[indexPath.row]
-        }
-        else if placement==5
-        {
-            cell.textLabel?.text = bloodABm[indexPath.row]
-        }
-        else if placement==6
-        {
-            cell.textLabel?.text = bloodO[indexPath.row]
-        }
-        else if placement==7
-        {
-            cell.textLabel?.text = bloodOm[indexPath.row]
-        }
-        else
-        {
-            cell.textLabel?.text = emptyb[indexPath.row]
-        }
-        
-
-        
-        
-        return cell
-    }
-    
     
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
@@ -149,39 +69,12 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     
     
     
-    
+   
     @IBAction func searching(_ sender: Any) {
-        listDoners.isHidden=false
-
-        if(placement<8){
-            bloodT=Btype[placement]}
+//bloodT=Btype[placement]
         
-        
-//        if placement==0{
-//             bloodT=Btype[placement]
-//            }//
-//        else if placement==1{
-//            return bloodAm.count}
-//            
-//        else if placement==2
-//        {return bloodB.count}
-//            
-//            
-//        else if placement==3
-//        { return bloodBm.count}
-//            
-//        else if placement==4
-//        {return bloodAB.count}
-//        else if placement==5
-//        {return bloodABm.count}
-//        else if placement==6
-//        {return bloodO.count}
-//        else if placement==7
-//        {return bloodOm.count}
-//        else
-//        {return 2}
-
-        
+       
+    
     }
     
     //search button clicked
@@ -203,7 +96,10 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         placement=row
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let playerViewController = segue.destination as! DonerList
+        playerViewController.intPassed = placement
+    }
 
 }
 
