@@ -10,6 +10,11 @@
 		0882BA13C287D2836C3059FE /* Pods_Donor_ListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9ECB3C9D245A618F5071D58 /* Pods_Donor_ListTests.framework */; };
 		36A0985AD8A43B646B173EE0 /* Pods_Donor_List.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779BA207DEC27F44DD72A7F6 /* Pods_Donor_List.framework */; };
 		C542F31D5A26BE755123FFC9 /* Pods_Donor_ListUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E988C639656EBFE91B87878C /* Pods_Donor_ListUITests.framework */; };
+		E229A6361F1BE227005FA518 /* RegistrationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E229A6351F1BE227005FA518 /* RegistrationPickerViewController.swift */; };
+		E229A6381F1BE76B005FA518 /* BloodTypePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E229A6371F1BE76B005FA518 /* BloodTypePickerViewController.swift */; };
+		E229A63C1F1BF187005FA518 /* DonerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E229A63B1F1BF187005FA518 /* DonerList.swift */; };
+		E229A63E1F1BFF56005FA518 /* HospitalFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E229A63D1F1BFF56005FA518 /* HospitalFirstViewController.swift */; };
+		E229A6401F1C025F005FA518 /* DonorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E229A63F1F1C025F005FA518 /* DonorViewController.swift */; };
 		E28EB61F1F19591700B2D175 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28EB61E1F19591700B2D175 /* AppDelegate.swift */; };
 		E28EB6211F19591700B2D175 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28EB6201F19591700B2D175 /* ViewController.swift */; };
 		E28EB6241F19591700B2D175 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28EB6221F19591700B2D175 /* Main.storyboard */; };
@@ -45,6 +50,11 @@
 		A9ECB3C9D245A618F5071D58 /* Pods_Donor_ListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Donor_ListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBFBA1FE7809E03B15725908 /* Pods-Donor ListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Donor ListTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Donor ListTests/Pods-Donor ListTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D032BACCE7E0BA21D4810E32 /* Pods-Donor List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Donor List.release.xcconfig"; path = "Pods/Target Support Files/Pods-Donor List/Pods-Donor List.release.xcconfig"; sourceTree = "<group>"; };
+		E229A6351F1BE227005FA518 /* RegistrationPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationPickerViewController.swift; sourceTree = "<group>"; };
+		E229A6371F1BE76B005FA518 /* BloodTypePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloodTypePickerViewController.swift; sourceTree = "<group>"; };
+		E229A63B1F1BF187005FA518 /* DonerList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DonerList.swift; path = ../../smallmilestone/BloodDonation/suggestDoners/suggestDoners/DonerList.swift; sourceTree = "<group>"; };
+		E229A63D1F1BFF56005FA518 /* HospitalFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HospitalFirstViewController.swift; sourceTree = "<group>"; };
+		E229A63F1F1C025F005FA518 /* DonorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonorViewController.swift; sourceTree = "<group>"; };
 		E28EB61B1F19591700B2D175 /* Donor List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Donor List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28EB61E1F19591700B2D175 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E28EB6201F19591700B2D175 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,12 +147,17 @@
 		E28EB61D1F19591700B2D175 /* Donor List */ = {
 			isa = PBXGroup;
 			children = (
+				E229A63B1F1BF187005FA518 /* DonerList.swift */,
 				E28EB61E1F19591700B2D175 /* AppDelegate.swift */,
 				E28EB6201F19591700B2D175 /* ViewController.swift */,
 				E28EB6221F19591700B2D175 /* Main.storyboard */,
 				E28EB6251F19591700B2D175 /* Assets.xcassets */,
 				E28EB6271F19591700B2D175 /* LaunchScreen.storyboard */,
 				E28EB62A1F19591700B2D175 /* Info.plist */,
+				E229A6351F1BE227005FA518 /* RegistrationPickerViewController.swift */,
+				E229A6371F1BE76B005FA518 /* BloodTypePickerViewController.swift */,
+				E229A63D1F1BFF56005FA518 /* HospitalFirstViewController.swift */,
+				E229A63F1F1C025F005FA518 /* DonorViewController.swift */,
 			);
 			path = "Donor List";
 			sourceTree = "<group>";
@@ -450,7 +465,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E28EB6211F19591700B2D175 /* ViewController.swift in Sources */,
+				E229A6381F1BE76B005FA518 /* BloodTypePickerViewController.swift in Sources */,
 				E28EB61F1F19591700B2D175 /* AppDelegate.swift in Sources */,
+				E229A6401F1C025F005FA518 /* DonorViewController.swift in Sources */,
+				E229A63E1F1BFF56005FA518 /* HospitalFirstViewController.swift in Sources */,
+				E229A6361F1BE227005FA518 /* RegistrationPickerViewController.swift in Sources */,
+				E229A63C1F1BF187005FA518 /* DonerList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
